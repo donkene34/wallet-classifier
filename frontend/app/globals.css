@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+/* Design inspiré de gitnimble.com : fond sombre, Inter, bordures fines, cartes très arrondies,
+   boutons pilule bleus. Séries de données : palette validée (bleu = humain, orange = bot). */
+:root {
+  color-scheme: light;
+  --brand: #005bff;
+  --brand-hover: #0049cc;
+  --page: #ffffff;
+  --surface: #fafafa;
+  --surface2: #f2f3f5;
+  --ink: #282a2f;
+  --ink2: #5a5e66;
+  --muted: #8a8d94;
+  --grid: rgba(0, 0, 0, 0.08);
+  --axis: rgba(0, 0, 0, 0.14);
+  --human: #2a78d6;
+  --bot: #eb6834;
+  --c1: #6250d6;
+  --c2: #1baf7a;
+  --c3: #e87ba4;
+  --ok: #087a52;
+  --err: #c13f3f;
+  --shadow: 0 28px 80px rgba(0, 0, 0, 0.1), 0 3px 12px rgba(0, 0, 0, 0.05);
+  --glow: rgba(0, 91, 255, 0.1);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #0b0d12;
+  --surface: #141820;
+  --surface2: #202530;
+  --ink: #f7f8fb;
+  --ink2: #b8bdc8;
+  --muted: #858c99;
+  --grid: rgba(255, 255, 255, 0.1);
+  --axis: rgba(255, 255, 255, 0.16);
+  --human: #3987e5;
+  --bot: #d95926;
+  --c1: #9085e9;
+  --c2: #199e70;
+  --c3: #d55181;
+  --ok: #5fe0ab;
+  --err: #ff8d8d;
+  --shadow: 0 28px 80px rgba(0, 0, 0, 0.45), 0 3px 12px rgba(0, 0, 0, 0.25);
+  --glow: rgba(0, 91, 255, 0.18);
+}
+
+@theme inline {
+  --color-brand: var(--brand);
+  --color-page: var(--page);
+  --color-surface: var(--surface);
+  --color-surface2: var(--surface2);
+  --color-ink: var(--ink);
+  --color-ink2: var(--ink2);
+  --color-muted: var(--muted);
+  --color-grid: var(--grid);
+  --color-axis: var(--axis);
+  --color-human: var(--human);
+  --color-bot: var(--bot);
+  --color-ok: var(--ok);
+  --color-err: var(--err);
+}
+
+html {
+  background: var(--page);
+}
+
+body {
+  background: var(--page);
+  color: var(--ink);
+  font-family: "Inter Variable", Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* halo bleu discret en haut de page */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0 0 auto 0;
+  height: 520px;
+  background: radial-gradient(60% 100% at 50% 0%, var(--glow), transparent 70%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--grid);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+}
+
+.display {
+  font-weight: 560;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+}
+
+.btn-primary {
+  background: var(--brand);
+  color: #fff;
+  border-radius: 999px;
+  font-weight: 560;
+  transition: background 0.15s;
+}
+.btn-primary:hover:not(:disabled) {
+  background: var(--brand-hover);
+}
+.btn-primary:disabled {
+  opacity: 0.5;
+}
+
+.btn-secondary {
+  background: var(--surface2);
+  border: 1px solid var(--grid);
+  border-radius: 999px;
+  font-weight: 500;
+}
+.btn-secondary:hover:not(:disabled) {
+  border-color: var(--axis);
+}
+
+.chip {
+  background: var(--surface);
+  border: 1px solid var(--grid);
+  border-radius: 999px;
+  transition: border-color 0.15s, background 0.15s;
+}
+.chip:hover:not(:disabled) {
+  border-color: var(--axis);
+  background: var(--surface2);
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}

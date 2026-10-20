@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+data/cache*.db
+models/
+*.png
+!data/clusters_pca.png
+!data/elbow.png
+.ipynb_checkpoints/

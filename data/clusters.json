@@ -1,0 +1,706 @@
+{
+ "meta": {
+  "k": 3,
+  "eps": 1.9118019019580008,
+  "min_samples": 4,
+  "log1p": true,
+  "features": [
+   "tx_count",
+   "avg_time_between_tx",
+   "std_time_between_tx",
+   "hour_entropy",
+   "gas_price_std",
+   "unique_contracts_ratio",
+   "round_amount_ratio",
+   "weekend_ratio"
+  ],
+  "pca_explained_variance": [
+   0.5602326733550409,
+   0.17510559403698603
+  ],
+  "ari_kmeans": 0.3059841588232269,
+  "ari_dbscan": 0.3099046026095516
+ },
+ "points": [
+  {
+   "address": "0xae2fc483527b8ef99eb5d9b44875f005ba1fae13",
+   "label": "bot",
+   "pc1": -7.982744004503774,
+   "pc2": 1.4543602222679297,
+   "kmeans": 1,
+   "dbscan": -1
+  },
+  {
+   "address": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
+   "label": "human",
+   "pc1": 1.0792083929940293,
+   "pc2": 0.17696877051396917,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0xb8c2c29ee19d8307cb7255e1cd9cbde883a267d5",
+   "label": "human",
+   "pc1": 1.3123188709534062,
+   "pc2": -1.2702624019050268,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0x983110309620d911731ac0932219af06091b6744",
+   "label": "human",
+   "pc1": 1.5361103230685857,
+   "pc2": 0.029708724702078065,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0x866b3c4994e1416b7c738b9818b31dc246b95eee",
+   "label": "human",
+   "pc1": 0.9329338076333425,
+   "pc2": -0.9895759980834716,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0xa7860e99e3ce0752d1ac53b974e309fff80277c6",
+   "label": "human",
+   "pc1": 2.07245260871281,
+   "pc2": 2.1822118675147406,
+   "kmeans": 2,
+   "dbscan": 0
+  },
+  {
+   "address": "0xb352bb4e2a4f27683435f153a259f1b207218b1b",
+   "label": "human",
+   "pc1": 1.1680532743675949,
+   "pc2": -1.8043394660141043,
+   "kmeans": 0,
+   "dbscan": -1
+  },
+  {
+   "address": "0x839395e20bbb182fa440d08f850e6c7a8f6f0780",
+   "label": "human",
+   "pc1": -0.5075940231347322,
+   "pc2": -1.431898763969024,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0x2d7d6ec6198adfd5850d00bd601958f6e316b05e",
+   "label": "human",
+   "pc1": 1.5771238373427336,
+   "pc2": -1.3606021272458735,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0x866f5da24591b2401f04c1f3dd0cbc799bb52fdf",
+   "label": "human",
+   "pc1": 1.5798343851008936,
+   "pc2": -1.3239062070401861,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0x179a862703a4adfb29896552df9e307980d19285",
+   "label": "human",
+   "pc1": 1.9912131958301775,
+   "pc2": 1.6320461394888859,
+   "kmeans": 2,
+   "dbscan": 0
+  },
+  {
+   "address": "0x7028b191313de12ada880ce0496a2bb12b70595e",
+   "label": "human",
+   "pc1": 0.8871562570182707,
+   "pc2": 1.5756659786862535,
+   "kmeans": 2,
+   "dbscan": 0
+  },
+  {
+   "address": "0xd83a5a8852049ca286f234b594d7f2b022565fc5",
+   "label": "human",
+   "pc1": 0.6427448228790823,
+   "pc2": 0.5403152235682194,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0x0579a616689f7ed748dc07692a3f150d44b0ca09",
+   "label": "human",
+   "pc1": 0.11493935591167738,
+   "pc2": 0.2758933415690968,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0xc0d86456f6f2930b892f3dad007cdbe32c081fe6",
+   "label": "human",
+   "pc1": 1.0343351453456695,
+   "pc2": 1.3114174546539743,
+   "kmeans": 2,
+   "dbscan": 0
+  },
+  {
+   "address": "0x17296956b4e07ff8931e4ff4ea06709fab70b879",
+   "label": "human",
+   "pc1": -0.024259713329365183,
+   "pc2": -1.2304228741943524,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0xe0e216283eef00895b6abaa73848448596b85724",
+   "label": "human",
+   "pc1": 1.6475425837266697,
+   "pc2": 1.8830098038664063,
+   "kmeans": 2,
+   "dbscan": 0
+  },
+  {
+   "address": "0x015122a625b45f68e6d795c0ab99fc7107e4c3b9",
+   "label": "human",
+   "pc1": 1.699167857673956,
+   "pc2": 1.2269960779210938,
+   "kmeans": 2,
+   "dbscan": 0
+  },
+  {
+   "address": "0x9d5765595a92c560c8759d2a9c375c66123765a5",
+   "label": "human",
+   "pc1": -1.9896224258096742,
+   "pc2": 0.3343743633021924,
+   "kmeans": 1,
+   "dbscan": 0
+  },
+  {
+   "address": "0x9bcd78ae10965c28ed1d60f1963ad55f245bd353",
+   "label": "human",
+   "pc1": 1.0546143220536188,
+   "pc2": 0.03376164979435805,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0x2f2f665974261c4129b1dc6c359bd259cd66f78a",
+   "label": "human",
+   "pc1": -1.491667070864577,
+   "pc2": 0.1607390884708457,
+   "kmeans": 1,
+   "dbscan": 0
+  },
+  {
+   "address": "0x3fb19771947072629c8eee7995a2ef23b72d4c8a",
+   "label": "human",
+   "pc1": -0.1917191954856797,
+   "pc2": -0.7954784215184407,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0x896212da5d35dbf0e7c57a37133f0c97033f82b5",
+   "label": "human",
+   "pc1": 1.4222215743972138,
+   "pc2": -1.1536166103394825,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0x00de4b13153673bcae2616b67bf822500d325fc3",
+   "label": "human",
+   "pc1": 0.8866215356860125,
+   "pc2": -0.818593739801253,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0x16a3e35404d7e7925e95935c1affca791223a7d6",
+   "label": "human",
+   "pc1": -0.20503396362117174,
+   "pc2": 0.9635225902643907,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0x7af3edc58487bad40a21b93d90f14453282d8df3",
+   "label": "human",
+   "pc1": -0.2551217149087714,
+   "pc2": -0.3536325820662709,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0xe54b20301fa0b9d5419cd7bfef6f5dab8c8b885d",
+   "label": "human",
+   "pc1": 1.6019822434698718,
+   "pc2": -0.013801746689518979,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0xcd0d967449430caaabda422af22f64254c3f1168",
+   "label": "human",
+   "pc1": -0.2631419563493567,
+   "pc2": -0.22389000888336139,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0xbe57661ebf991c854557a0c906c70c5ee5a06864",
+   "label": "human",
+   "pc1": 2.226596460198112,
+   "pc2": 2.7557282640279364,
+   "kmeans": 2,
+   "dbscan": 0
+  },
+  {
+   "address": "0x0c5e9dd90b2a3056e175099b256a875fd94063dd",
+   "label": "human",
+   "pc1": 0.8565653941354495,
+   "pc2": -0.8967480057982058,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0xb1db513ac47e476944f392d8e047e3a0a5a5ff9c",
+   "label": "human",
+   "pc1": 1.7925269607091814,
+   "pc2": -0.04655166779507043,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0x7375237dcef733d17409e25dcc4da5e0f71ba199",
+   "label": "human",
+   "pc1": 1.3089566759979014,
+   "pc2": -0.6498377599920544,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0x4f06fd857f8d4c6172aaa3f6a96a645b6940aacc",
+   "label": "human",
+   "pc1": 2.4017946442540477,
+   "pc2": 1.154006865420181,
+   "kmeans": 2,
+   "dbscan": 0
+  },
+  {
+   "address": "0x4cb75146e98562c9d79b31649c6c739e4dcb7cd5",
+   "label": "human",
+   "pc1": -1.1956884062563373,
+   "pc2": 0.328444342300514,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0x019ed608dd806b80193942f2a960e7ac8abb2ee3",
+   "label": "human",
+   "pc1": 0.6010615692810418,
+   "pc2": 1.9815217199983632,
+   "kmeans": 2,
+   "dbscan": 0
+  },
+  {
+   "address": "0xd9aee33795f242a12bb9e687e1533f44ac5bb11c",
+   "label": "human",
+   "pc1": 0.026385013558910854,
+   "pc2": -1.0693587997330778,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0xdcc969a7c3b9944f03a452bb759e84fdf6b904f0",
+   "label": "human",
+   "pc1": 2.107261381350317,
+   "pc2": -0.2529350665874002,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0x49f65916e05fd9c28c49664d19f8647b915a82a2",
+   "label": "human",
+   "pc1": 0.29706044177031427,
+   "pc2": -0.15445535053678558,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0xcc982e0b8843fe6689904b3eaddff88e346288b7",
+   "label": "human",
+   "pc1": 1.5113761988232002,
+   "pc2": -1.6806220408194106,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0xccd95a8638306f7bf6840280fa82354278aa8b5f",
+   "label": "human",
+   "pc1": 3.1698096274879193,
+   "pc2": 4.1786387964837886,
+   "kmeans": 2,
+   "dbscan": -1
+  },
+  {
+   "address": "0x9dc051ce8da00508838d152c35f1fb94de32b6ae",
+   "label": "human",
+   "pc1": 2.38166041872537,
+   "pc2": 0.48222498202794023,
+   "kmeans": 2,
+   "dbscan": 0
+  },
+  {
+   "address": "0x42f9134e9d3bf7eee1f8a5ac2a4328b059e7468c",
+   "label": "human",
+   "pc1": 2.615307219771594,
+   "pc2": -1.5667851293024304,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0x5c04e7808455ee0e22c2773328c151d0dd79dc62",
+   "label": "human",
+   "pc1": 1.0998304086362312,
+   "pc2": 0.10700442279537875,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0xb933aee47c438f22de0747d57fc239fe37878dd1",
+   "label": "human",
+   "pc1": 0.4477078375208024,
+   "pc2": -1.1109944498371598,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0x6f9bb7e454f5b3eb2310343f0e99269dc2bb8a1d",
+   "label": "human",
+   "pc1": -1.8038431159177122,
+   "pc2": -0.2684133430459831,
+   "kmeans": 1,
+   "dbscan": 0
+  },
+  {
+   "address": "0x070341aa5ed571f0fb2c4a5641409b1a46b4961b",
+   "label": "human",
+   "pc1": 0.573059551792235,
+   "pc2": -0.5872522747280559,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0xe93d59cc0bcecfd4ac204827ef67c5266079e2b5",
+   "label": "human",
+   "pc1": 0.37747605987894334,
+   "pc2": -1.4114336716280305,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0xb79294d00848a3a4c00c22d9367f19b4280689d7",
+   "label": "human",
+   "pc1": 0.4545985906327305,
+   "pc2": -1.2626745381048279,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0x6e28ec7d28cf469f624579ec47d1a8bf4befdae3",
+   "label": "human",
+   "pc1": 0.8814397532072593,
+   "pc2": -1.2065971677565879,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0xb3313b023e68cda95d7b625200e1b0fe6335a0c2",
+   "label": "human",
+   "pc1": 1.5307837019655923,
+   "pc2": 0.7949455431472406,
+   "kmeans": 2,
+   "dbscan": 0
+  },
+  {
+   "address": "0xa8293dd8eb52564a35b8357a539146321b934153",
+   "label": "human",
+   "pc1": 0.047987761456522116,
+   "pc2": -0.8997124967064498,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0x089acc703d9fd8b14d6e03d4d38561c1d4672dfd",
+   "label": "human",
+   "pc1": 0.05162555705818129,
+   "pc2": -0.21874999723542535,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0x7bb9dccc97052ddef05141897fe8313fd4ad0418",
+   "label": "human",
+   "pc1": 0.19417097134237254,
+   "pc2": -0.7069864212186701,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0xf51754d95c0b9bb416ab4915e9f10b04d04d29e5",
+   "label": "human",
+   "pc1": 0.24212773786452713,
+   "pc2": -1.285398466342263,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0xfffd05ae9db4d5f4e23e2f37395db2f87359bf5d",
+   "label": "human",
+   "pc1": 0.03747670666438001,
+   "pc2": -0.8173209984414765,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0xa30e48c7826eed00223224dfde038347b983f0f1",
+   "label": "human",
+   "pc1": 2.6846785439455867,
+   "pc2": -1.3887876442622133,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0x168f87fbfe36b84e44b9d06278b2aa1cc73d7400",
+   "label": "human",
+   "pc1": 0.7098383828179711,
+   "pc2": -0.06027667286756911,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0x4770f67db9d09ca7347c1fccbf3795a464065ecb",
+   "label": "human",
+   "pc1": 1.3117122270518096,
+   "pc2": 0.007665057709189088,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0x8d1aade42646b715470b20485e7abe43ee35c1b9",
+   "label": "human",
+   "pc1": 1.5556003349245024,
+   "pc2": -1.0100381777001395,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0x0bb9b82a955d5f0170a18c44aa0b8a451a59ae04",
+   "label": "human",
+   "pc1": 1.3804348148258938,
+   "pc2": -0.01867527182958175,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0x0cd5e7c7fc12c9fcd2673cf0f7e168e661060a50",
+   "label": "human",
+   "pc1": 2.433434032140182,
+   "pc2": -0.834458084282691,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0x53da33f96ecffe1cdf3842883c9ba3ba3b49c14b",
+   "label": "human",
+   "pc1": 1.4339907551016706,
+   "pc2": 1.4499706303824287,
+   "kmeans": 2,
+   "dbscan": 0
+  },
+  {
+   "address": "0x4d9ba778b7f121e58e5d3bb6aef514e035a7c7f5",
+   "label": "human",
+   "pc1": 2.44272196299412,
+   "pc2": 2.4637479199919694,
+   "kmeans": 2,
+   "dbscan": -1
+  },
+  {
+   "address": "0x465c63680f2a0b4277d9b4cecc3f3310e531a77f",
+   "label": "human",
+   "pc1": 0.4813120329013513,
+   "pc2": 0.6700802851192375,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0x697161a9ece8afd6ae30946d790077050f993cbc",
+   "label": "bot",
+   "pc1": 0.19738563929433833,
+   "pc2": -0.11677215368563788,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0x7117ca30af85706b964100dd8fbbe78f2fb6d3d8",
+   "label": "bot",
+   "pc1": -0.16659644235796192,
+   "pc2": -0.10974010415461681,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0x3db107e2b67aa7c86403c3f4db4a49cb98aaddc4",
+   "label": "bot",
+   "pc1": -4.902206014013069,
+   "pc2": 0.8491392809500327,
+   "kmeans": 1,
+   "dbscan": -1
+  },
+  {
+   "address": "0xa36ee7f210bf8e6780fb7fff67453e354504ee8d",
+   "label": "bot",
+   "pc1": -4.236965201033229,
+   "pc2": -1.164396551401747,
+   "kmeans": 1,
+   "dbscan": 1
+  },
+  {
+   "address": "0xfcd31202cc179c7cb85de0f9a212524f530f6cad",
+   "label": "bot",
+   "pc1": -4.52458266430757,
+   "pc2": -0.9479303172250918,
+   "kmeans": 1,
+   "dbscan": 1
+  },
+  {
+   "address": "0xdcab9bc58f23c8e5f6fa8e05fd4dfaadc158567c",
+   "label": "bot",
+   "pc1": -1.5564055225158102,
+   "pc2": -0.3017151186077456,
+   "kmeans": 1,
+   "dbscan": 0
+  },
+  {
+   "address": "0xd83e60d273fd0cb3b05c2611db940fecb7b6ca64",
+   "label": "bot",
+   "pc1": -0.7841606958520536,
+   "pc2": -0.7388915418034241,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0xb52dae80b2ce64715d50ff3dfe4edd337f3d29bf",
+   "label": "bot",
+   "pc1": -3.209384437310145,
+   "pc2": 1.3777036761667543,
+   "kmeans": 1,
+   "dbscan": 0
+  },
+  {
+   "address": "0xb6a3638f6d0ef594e509d6234cb8fae9378fcb06",
+   "label": "bot",
+   "pc1": -3.0761823606405447,
+   "pc2": 1.4421954032767967,
+   "kmeans": 1,
+   "dbscan": 0
+  },
+  {
+   "address": "0xe146629431debafa910c36ccbb9f509ffff1be15",
+   "label": "bot",
+   "pc1": -2.8663808207700283,
+   "pc2": 1.4484722456588688,
+   "kmeans": 1,
+   "dbscan": 0
+  },
+  {
+   "address": "0xf0777aff9301ff7d0af60e49b49488aa0861e63f",
+   "label": "bot",
+   "pc1": -2.807761208372196,
+   "pc2": 1.5751463467988103,
+   "kmeans": 1,
+   "dbscan": 0
+  },
+  {
+   "address": "0xe85091501587b32a323be2512b36fab392d7c6bc",
+   "label": "bot",
+   "pc1": -4.351608104308072,
+   "pc2": 1.648889242893283,
+   "kmeans": 1,
+   "dbscan": 0
+  },
+  {
+   "address": "0x92c18a69a15aa0f505250b2d2b59bd256334cbd3",
+   "label": "bot",
+   "pc1": 0.3729687184541567,
+   "pc2": 1.524765418425998,
+   "kmeans": 2,
+   "dbscan": 0
+  },
+  {
+   "address": "0x8e7d1dd5304f8b04769bda9e3fdf3a2935fcb1cf",
+   "label": "bot",
+   "pc1": -0.4792634611169675,
+   "pc2": -1.0416058362343115,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0x3d53c172c5fa064fdaa5d7fb661fb4281fe05cf1",
+   "label": "bot",
+   "pc1": -3.699562650568697,
+   "pc2": -0.4143981923385614,
+   "kmeans": 1,
+   "dbscan": 1
+  },
+  {
+   "address": "0xa0b9faac81f34a849d57516a0193b37ec23e70b8",
+   "label": "bot",
+   "pc1": -3.7059860320855775,
+   "pc2": -0.45077252391266337,
+   "kmeans": 1,
+   "dbscan": 1
+  },
+  {
+   "address": "0xb7fb3cf0ee6dd2ef243a2827c3001a5c1985632e",
+   "label": "bot",
+   "pc1": -3.674497708010232,
+   "pc2": -0.49416310741032593,
+   "kmeans": 1,
+   "dbscan": 1
+  },
+  {
+   "address": "0x1a5918dd41efcc34aba03c40b86242d10bc398fa",
+   "label": "bot",
+   "pc1": -3.6702476810447417,
+   "pc2": -0.49055897758772765,
+   "kmeans": 1,
+   "dbscan": 1
+  },
+  {
+   "address": "0xac411ce0f1a294544eee0922bfdfb64459301822",
+   "label": "bot",
+   "pc1": -3.7478071778737565,
+   "pc2": -0.456385864488388,
+   "kmeans": 1,
+   "dbscan": 1
+  },
+  {
+   "address": "0xbcb7b2bbb224eb2aec133ed388a706171eec27e6",
+   "label": "bot",
+   "pc1": -0.5213524902448308,
+   "pc2": -1.36193798808723,
+   "kmeans": 0,
+   "dbscan": 0
+  },
+  {
+   "address": "0xaec5928f55fe91011aa297a6cf26d6de59519f8a",
+   "label": "bot",
+   "pc1": 1.4120877799063052,
+   "pc2": 0.2430709810802494,
+   "kmeans": 0,
+   "dbscan": 0
+  }
+ ]
+}
